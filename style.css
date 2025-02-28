@@ -1,0 +1,50 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*header*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Body Styles */
+body{
+    font-family: Arial, sans-serif;
+    background:rgb(164, 151, 151);
+    background-size: cover;
+    color: rgb(0, 0, 0);
+}
+
+.board{
+    width: 560px;
+    border: 5px black;
+    padding: 60px;
+    display: grid;
+    grid-template-columns:repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    
+}
+
+.cell-light{
+    width: 70px;
+    height: 70px;
+    background-color: rgba(207, 186, 186, 0.796);
+}
+.cell-dark{
+    width: 70px;
+    height: 70px;
+    background-color: rgba(46, 38, 38, 0.796);
+}
+   
