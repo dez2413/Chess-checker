@@ -28,9 +28,12 @@ body{
 }
 
 .board{
+    margin-top: 60px;
+    margin-left: 60%;
+    margin-right: auto;
     width: 560px;
-    border: 5px black;
-    padding: 60px;
+    border: 20px black;
+    padding: 10px;
     display: grid;
     grid-template-columns:repeat(8, 1fr);
     grid-template-rows: repeat(8, 1fr);
@@ -46,5 +49,21 @@ body{
     width: 70px;
     height: 70px;
     background-color: rgba(46, 38, 38, 0.796);
+}
+
+/* Responsive Design */
+@media (max-width: 720px) {
+    .board{
+        margin-top: 60px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 560px;
+        border: 20px black;
+        padding: 10px;
+        display: grid;
+        grid-template-columns:repeat(8, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        
+    }
 }
    
