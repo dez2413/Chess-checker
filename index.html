@@ -10,9 +10,14 @@
     <header>
         <h1> Chess</h1>
     </header>
-   
-        <div class= "board" id = "board"></div>
-
+        <div id = "board"></div>
+        <div class="bars">
+            <p class="turnbar">It Is <span id="player"></span>'s Turn.</p>
+            <p class="infobar" id="info-display"></p>
+            <p class="errbar" id="err"></p>
+        </div>
+        
+        <script src="pieces.js"></script>
         <script src="script.js"></script>
     </body>
 </html>
